@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + TS</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #daeffa;
+      gap: 20px;
+    }
+
+    #app {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+    }
+
+    .tarjeta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #AEE2FF;
+      border-radius: 20px;
+      height: 200px;
+      width: 180px;
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
+    .tarjeta:hover, .botonInicio:hover {
+        border: 2px solid rgb(115, 96, 255);
+        color: rgb(115, 96, 255);
+    }
+
+    .imgTarjeta {
+      height: auto;
+      width:  75%;
+      object-fit: contain;
+    }
+
+    .botonInicio {
+      background-color: #AEE2FF;
+      border-radius: 20px;
+      height: fit-content;
+      width: fit-content;
+      font-size: x-large;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    .deshabilitar {
+      pointer-events: none;
+      opacity: 0.6;
+    }
+
+    .intentos {
+      font-size: x-large;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <div class="tarjeta deshabilitar" data-indice-id="0">
+      <img class="imgTarjeta" data-indice-id="0" src="/ParteAtras.png" alt="ParteAtras">
+    </div>
+    <div class="tarjeta deshabilitar" data-indice-id="1">
+      <img class="imgTarjeta" data-indice-id="1" src="/ParteAtras.png" alt="ParteAtras">
+    </div>
+    <div class="tarjeta deshabilitar" data-indice-id="2">
+      <img class="imgTarjeta" data-indice-id="2" src="/ParteAtras.png" alt="ParteAtras">
+    </div>
+    <div class="tarjeta deshabilitar" data-indice-id="3">
+      <img class="imgTarjeta" data-indice-id="3" src="/ParteAtras.png" alt="ParteAtras">
+    </div>
+    <div class="tarjeta deshabilitar" data-indice-id="4">
+      <img class="imgTarjeta" data-indice-id="4" src="/ParteAtras.png" alt="ParteAtras">
+    </div>
+    <div class="tarjeta deshabilitar" data-indice-id="5">
+      <img class="imgTarjeta" data-indice-id="5" src="/ParteAtras.png" alt="ParteAtras">
+    </div>
+    <div class="tarjeta deshabilitar" data-indice-id="6">
+      <img class="imgTarjeta" data-indice-id="6" src="/ParteAtras.png" alt="ParteAtras">
+    </div>
+    <div class="tarjeta deshabilitar" data-indice-id="7">
+      <img class="imgTarjeta" data-indice-id="7" src="/ParteAtras.png" alt="ParteAtras">
+    </div>
+    <div class="tarjeta deshabilitar" data-indice-id="8">
+      <img class="imgTarjeta" data-indice-id="8" src="/ParteAtras.png" alt="ParteAtras">
+    </div>
+    <div class="tarjeta deshabilitar" data-indice-id="9">
+      <img class="imgTarjeta" data-indice-id="9" src="/ParteAtras.png" alt="ParteAtras">
+    </div>
+    <div class="tarjeta deshabilitar" data-indice-id="10">
+      <img class="imgTarjeta" data-indice-id="10" src="/ParteAtras.png" alt="ParteAtras">
+    </div>
+    <div class="tarjeta deshabilitar" data-indice-id="11">
+      <img class="imgTarjeta" data-indice-id="11" src="/ParteAtras.png" alt="ParteAtras">
+    </div>
+  </div>
+  <button class="botonInicio">Iniciar partida</button>
+  <span class="intentos">Intentos fallidos:0</span>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
